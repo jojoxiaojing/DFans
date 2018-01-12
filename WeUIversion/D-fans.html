@@ -1,0 +1,435 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>应援</title>
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="logic.js" ></script>
+        <link rel="stylesheet" href="../Dfans/bower_components/weui/dist/style/weui.min.css"/>
+        
+        <style>
+        .yingyuan{
+                /* Oval: */
+                width:35%;               
+                border-radius: 50%;
+                background: #81C2D6;
+                position: absolute;
+                left:50%;
+                top:20%;
+                margin-left:-17.5%; 
+                /* 开始应援: */
+                text-align: center;
+            }
+            
+            .intext{
+                font-family: PingFangSC-Semibold;
+                font-size: 7vw;
+                color: #FFFFFF;
+                
+            }
+            
+            .page{
+                background: #81C2D6;
+                color: black;
+            }
+            
+            .page__hd{
+                padding: 20 0 15 15;
+                color:#ffffff;
+            }
+            .cut_page{
+                height: 1px;
+                background-color: #ffffff;
+            }
+            .weui-cells__title{
+                color: #fff;
+            }
+            
+            .bottom_space{
+                height: 90;
+                background: white;
+            }
+            
+            .weui-switch:checked {
+                border-color: #81C2D6;
+                background-color: #81C2D6;
+            }
+            
+            .weui-cells_radio .weui-check:checked+.weui-icon-checked:before {
+                color: #81C2D6;
+            }
+            
+            .weibo{
+                border-width: 1 1 1 1;
+                border-color: #81C2D6;
+            }
+            
+            .weibo_content{
+                margin: 10 10 10 10;
+            }
+            
+            .weibo_cut{
+                height: 8px;
+                background-color: #c6e6f0;
+            }
+            
+            .login__bd{
+                background: white;
+            }
+
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        
+<!--        login-page-->
+    <div class="page login-page">
+        <div class="page__hd">
+            <h1 class="page__title">登录</h1>
+        </div>
+        
+        <div class="page__bd login__bd">
+            <div class="qr"><img class="qr_img"></div>
+            <p class="login" class="info_qr">请用微博app扫描此二维码</p>
+        </div>
+        
+        
+    </div>
+        
+        
+<!--    announce-page    -->
+    <div class="page announce-page">
+        <div class="page__hd">
+            <h1 class="page__title">迪圈热点</h1>
+        </div>
+        
+        <div class="page__bd">
+        <div class="weui-cell weibo"  style="background:white; display:block">
+            <div class="weibo_head" style="display:flex">
+                    <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                        <img src="../Dfans/img/logo2.png" style="width: 50px;display: block">
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>Dear-迪丽锅巴</p>
+                        <p style="font-size: 13px;color: #888888;">22:30 04/06/2017</p>
+                    </div>
+            </div>
+            <div class="weibo_content" style="font-family: -apple-system-font,Helvetica Neue,sans-serif;">
+                明日中午12:00，将正式发布第二版迪圈应援app，请大家记得及时更新升级哦👀！
+            </div>
+            
+            <div class="weibo_picture">
+            </div>
+            
+            
+        </div>
+            
+            <div class="weui-cell weibo"  style="background:white; display:block">
+            <div class="weibo_head" style="display:flex">
+                    <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                        <img src="../Dfans/img/headPicture/Screen%20Shot%202017-07-04%20at%203.36.55%20AM.png" style="width: 50px;display: block">
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>Dear迪丽热巴后援会</p>
+                        <p style="font-size: 13px;color: #888888;">22:30 04/06/2017</p>
+                    </div>
+            </div>
+            <div class="weibo_content" style="font-family: -apple-system-font,Helvetica Neue,sans-serif;">
+                迪丽热巴《里脊传》宣传将在8越4日浙江杭州市举行，共有30名粉丝名额参与线下互动，即日起可报名。
+            </div>
+            
+            <div class="weibo_picture">
+            </div>
+            
+            
+        </div>
+            
+            <div class="weui-cell weibo"  style="background:white; display:block">
+            <div class="weibo_head" style="display:flex">
+                    <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                        <img src="../Dfans/img/headPicture/Screen%20Shot%202017-07-04%20at%203.38.17%20AM.png" style="width: 50px;display: block">
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>迪圈FM927-3</p>
+                        <p style="font-size: 13px;color: #888888;">22:30 04/06/2017</p>
+                    </div>
+            </div>
+            <div class="weibo_content" style="font-family: -apple-system-font,Helvetica Neue,sans-serif;">
+                迪丽热巴还是单身，不接受反驳。鹿晗是怂逼，不接受反驳。
+            </div>           
+            <div class="weibo_picture">
+            </div>
+            
+            
+        </div>
+            
+            <div class="weui-cell weibo"  style="background:white; display:block">
+            <div class="weibo_head" style="display:flex">
+                    <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                        <img src="../Dfans/img/headPicture/Screen%20Shot%202017-07-04%20at%203.37.56%20AM.png" style="width: 50px;display: block">
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>迪迪卫控评小管家</p>
+                        <p style="font-size: 13px;color: #888888;">22:30 04/06/2017</p>
+                    </div>
+            </div>
+            <div class="weibo_content" style="font-family: -apple-system-font,Helvetica Neue,sans-serif;">
+                明日早上10点，《烈火乳鸽》最新片花将放出，各位敌敌畏及时上线参与控评，无法参与控评的敌敌畏也请及时打开应援app，参与点赞！
+            </div>
+                
+                <div class="weui-grids">
+        <a href="javascript:;" class="weui-grid">
+            <div class="weui-grid__icon">
+                <img src="../Dfans/img/headPicture/Screen%20Shot%202017-07-04%20at%203.38.17%20AM.png" alt="">
+            </div>
+            <p class="weui-grid__label">Grid</p>
+        </a>
+        <a href="javascript:;" class="weui-grid">
+            <div class="weui-grid__icon">
+                <img src="../Dfans/img/headPicture/Screen%20Shot%202017-07-04%20at%203.38.17%20AM.png" alt="">
+            </div>
+            <p class="weui-grid__label">Grid</p>
+        </a>
+        <a href="javascript:;" class="weui-grid">
+            <div class="weui-grid__icon">
+                <img src="../Dfans/img/headPicture/Screen%20Shot%202017-07-04%20at%203.38.17%20AM.png" alt="">
+            </div>
+            <p class="weui-grid__label">Grid</p>
+        </a>
+    </div>
+            
+            <div class="weibo_picture">
+            </div>
+            
+            
+        </div>
+            
+            
+            
+        </div>
+        
+        <div class="bottom_space"> </div>
+    </div>
+        
+        
+<!--    yingyuan-page    -->
+    <div class="yingyuan-page">
+           <div class="yingyuan">  
+            <p class="intext">开始<br/>应援</p>
+        </div> 
+    </div>
+        
+        
+<!--   setting-page     -->
+    <div class="page setting-page">     
+        <div class="page__hd">
+            <h1 class="page__title">设置</h1>
+        </div>
+        <div class="cut_page"></div>
+        <div class="page__bd">
+                 <div class="account_manage">
+                    <div class="weui-cells__title">账号管理</div>
+                    <div class="weui-cells">
+                        <div class="account-cell weui-cell  weui-cell_access">
+                            <div class="weui-cell__bd">
+                                <p>主号</p>
+                            </div>
+                            <div class="weui-cell__ft">抹茶介介</div>
+                        </div>
+                        <div class="account-cell weui-cell  weui-cell_access">
+                            <div class="weui-cell__bd">
+                                <p>小号</p>
+                            </div>
+                            <div class="weui-cell__ft">抹茶介介小号1</div>
+                        </div>
+                        <a href="javascript:void(0);" class="weui-cell weui-cell_link">
+                            <div class="weui-cell__bd">添加更多小号</div>
+                        </a>
+                </div>
+            </div>
+        
+    <div class="yingyuanitems_manage">
+        <div class="weui-cells__title">应援项目</div>
+        <div class="weui-cells">
+            <div class="weui-cell weui-cell_switch">
+                <div class="weui-cell__bd">点赞</div>
+                <div class="weui-cell__ft">
+                    <input class="weui-switch" type="checkbox">
+                </div>
+            </div>
+            
+            <div class="weui-cell weui-cell_switch">
+                <div class="weui-cell__bd">举报</div>
+                <div class="weui-cell__ft">
+                    <input class="weui-switch" type="checkbox">
+                </div>
+            </div>
+            
+            <div class="weui-cell weui-cell_switch">
+                <div class="weui-cell__bd">投票</div>
+                <div class="weui-cell__ft">
+                    <input class="weui-switch" type="checkbox">
+                </div>
+            </div>
+            
+            <div class="weui-cell weui-cell_switch">
+                <div class="weui-cell__bd">超话签到</div>
+                <div class="weui-cell__ft">
+                    <input class="weui-switch" type="checkbox">
+                </div>
+            </div>
+            
+            <div class="weui-cell weui-cell_switch">
+                <div class="weui-cell__bd">小号抡博</div>
+                <div class="weui-cell__ft">
+                    <input class="weui-switch" type="checkbox">
+                </div>
+            </div>         
+        </div>
+    </div>
+            
+    <div class="announce_manage">
+        <div class="weui-cells__title">推送设置</div>
+        
+        <div class="weui-cells weui-cells_radio">
+            <div class="weui-cell weui-cell_switch">
+                <div class="weui-cell__bd">开启每日提醒</div>
+                <div class="weui-cell__ft">
+                    <input class="weui-switch" type="checkbox">
+                </div>
+            </div>
+            <label class="weui-cell weui-check__label" for="x11">
+                <div class="weui-cell__bd">
+                    <p>普通任务＋紧急任务推送</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" name="radio1" class="weui-check" id="x11" checked="checked">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+            <label class="weui-cell weui-check__label" for="x12">
+                <div class="weui-cell__bd">
+                    <p>仅限紧急任务推送</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" class="weui-check" name="radio1" id="x12">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+            <label class="weui-cell weui-check__label" for="x13">
+                <div class="weui-cell__bd">
+                    <p>别推送任何应援任务</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" class="weui-check" name="radio1" id="x13">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>          
+            </div>           
+    </div>
+    
+    <div class="tuoguan_manage">
+        <div class="weui-cells__title">服务器托管设置</div>
+        <div class="weui-cells">
+        <div class="weui-cell weui-cell_switch">
+                <div class="weui-cell__bd">大号托管</div>
+                <div class="weui-cell__ft">
+                    <input class="weui-switch" type="checkbox">
+                </div>
+            </div>
+        <div class="weui-cell weui-cell_switch">
+                <div class="weui-cell__bd">小号托管</div>
+                <div class="weui-cell__ft">
+                    <input class="weui-switch" type="checkbox">
+                </div>
+        </div>
+        </div>
+            
+    </div>
+            
+            <div class="bottom_space"> </div>
+  
+        </div>    
+    </div>
+        
+    
+<!--    bottom_tabbar-->
+    <div class="weui-tabbar tabbar" style="position:fixed">
+                <a href="javascript:;" class="weui-tabbar__item announce-tab">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="../Dfans/img/Anubis-50.png" alt="" class="weui-tabbar__icon announce-img">
+                    </span>
+                    <p class="weui-tabbar__label">热点</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item yingyuan-tab" >
+                    <img src="../Dfans/img/logo1.png" alt="" class="weui-tabbar__icon" style="    transform: scale(3.5) translate(0px,-4.5px);">                   
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item setting-tab">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="../Dfans/img/Dharmachakra-50.png" alt="" class="weui-tabbar__icon  setting-img">
+                    </span>
+                    <p class="weui-tabbar__label">设置</p>
+                </a>
+    </div>
+        
+        <script>
+        $(function(){
+//            if(localStorage.numOfAccs == 0 || localStorage.numOfAccs == undefined){                        
+//                goLoginPage();
+//                login();                 
+//            }else{
+//                goYingYuanPage();
+//            }
+            
+            goYingYuanPage();
+            
+            
+            //click yingyuan
+            $(".yingyuan").click(function(){           
+                var i = "应援中";
+                $(".intext").html(i);
+                var m2 = ($(".yingyuan").height())*0.5 - ($(".intext").height())*0.5;
+                $(".intext").css("margin-top",m2);
+                console.log("begin");
+                createFriendshipPage(localStorage.acc1);   
+                console.log("end");
+                //run the correspongding function here
+            });
+            
+            //click announce-tab
+            $(".announce-tab").click(function(){
+                $(".announce-img").attr("src","../Dfans/img/Anubis Filled-50.png");
+                $(".setting-img").attr("src","../Dfans/img/Dharmachakra-50.png");
+                $(".yingyuan-page").css("display","none");          
+                $(".announce-page").css("display","block");
+                $(".setting-page").css("display","none");
+                
+            });
+            
+            //click yingyuan-tab
+            $(".yingyuan-tab").click(function(){
+                $(".announce-img").attr("src","../Dfans/img/Anubis-50.png");
+                $(".setting-img").attr("src","../Dfans/img/Dharmachakra-50.png");
+                $(".yingyuan-page").css("display","block");          
+                $(".announce-page").css("display","none");
+                $(".setting-page").css("display","none");
+            });
+            
+            //click setting-tab
+            $(".setting-tab").click(function(){
+                $(".setting-img").attr("src","../Dfans/img/Dharmachakra Filled-50.png");
+                $(".announce-img").attr("src","../Dfans/img/Anubis-50.png");
+                $(".yingyuan-page").css("display","none");          
+                $(".announce-page").css("display","none");
+                $(".setting-page").css("display","block");
+            });
+            
+            //click account and go to account-setting page
+            $(".")
+        });
+        </script>
+    </body>
+</html>
